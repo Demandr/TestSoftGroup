@@ -11,18 +11,11 @@ import static org.junit.Assert.*;
  */
 public class ExampleUnitTest {
     @Test
-    public void addition_isCorrect() throws Exception {
-        assertEquals(4, 2 + 2);
-    }
+    public void checkPalindrome()throws Exception{
+        MainActivity main = new MainActivity();
 
-    @Test
-    public void addition_isNotCorrect() throws Exception {
-        assertEquals("Numbers isn't equals!", 5, 2 + 2);
-    }
+        assertTrue(main.isPalindrome("111"));
 
-    @Test(expected = NullPointerException.class)
-    public void nullStringTest() {
-        String str = null;
-        assertTrue(str.isEmpty());
+        assertFalse(main.isPalindrome("123"));
     }
 }

@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         toast.show();
     }
 
-    private static boolean isPalindrome(String text) {
+    public static boolean isPalindrome(String text) {
         text= text.toLowerCase();
         int textLength = text.length();
         for(int i = 0; i < textLength / 2; i++)
