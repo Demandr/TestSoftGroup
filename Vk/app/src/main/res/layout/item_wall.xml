@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              xmlns:fresco="http://schemas.android.com/tools">
+
+
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_wall"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="3dp"
+    android:layout_marginTop="9dp"
+    android:layout_marginLeft="9dp"
+    android:layout_marginRight="9dp"
+    card_view:cardElevation="1dp"
+    android:layout_marginBottom="0dp">
+    >
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:paddingLeft="16px"
+            android:paddingTop="16px"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_rowSpan="2"
+            android:id="@+id/imageWall"
+            fresco:roundAsCircle="true"
+            fresco:roundedCornerRadius="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:textColor="@color/vk_black"
+        android:id="@+id/textNamePost"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:focusable="false" />
+
+    <TextView
+        android:textColor="@color/vk_black"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Small Text"
+        android:id="@+id/textDatePost"
+        android:layout_row="1"
+        android:layout_column="1" />
+
+    <TextView
+        android:textColor="@color/vk_black"
+        android:paddingLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium Texsddddddddddddddddddddddddddt"
+        android:id="@+id/textPost"
+        android:layout_columnSpan="2"
+        android:layout_row="2"
+        android:layout_column="0"
+        />
+
+
+
+
+
+    <GridLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:gravity="center">
+        <ToggleButton
+            android:id="@+id/btnRepostWall"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/check_like"
+            android:textOn=""
+            android:textOff=""
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_gravity="end"/>
+
+        <ToggleButton
+            android:id="@+id/btnLikeWall"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/check_like"
+            android:textOn=""
+            android:textOff=""
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_gravity="end"/>
+
+
+
+
+
+    </GridLayout>
+
+
+</GridLayout>
+</android.support.v7.widget.CardView>
+</LinearLayout>

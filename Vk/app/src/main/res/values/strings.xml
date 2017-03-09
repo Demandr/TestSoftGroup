@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Vk</string>
+    <integer name="com_vk_sdk_AppId">5906777</integer>
+    <string name="send_massage">Send</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single" android:id="@+id/mainMenu">
+        <item android:id="@+id/nav_main" android:icon="@android:drawable/ic_menu_camera"
+              android:title="My Profile" />
+        <item android:id="@+id/nav_friends" android:icon="@android:drawable/ic_menu_camera"
+            android:title="Friends" />
+        <item android:id="@+id/nav_messages" android:icon="@android:drawable/ic_menu_camera"
+            android:title="Message" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item android:id="@+id/nav_exit" android:icon="@android:drawable/ic_menu_delete"
+                android:title="Exit" />
+
+        </menu>
+    </item>
+
+</menu>
